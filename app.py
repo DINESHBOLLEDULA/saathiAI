@@ -6,7 +6,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    print('hello')
+    return 'hello'
 @app.route("/whatsapp", methods=['POST'])
 def whatsapp_reply():
     incoming_msg = request.form.get('Body')
